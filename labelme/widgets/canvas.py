@@ -463,6 +463,19 @@ class Canvas(QtWidgets.QWidget):
         if self.selectedVertex():  # A vertex is marked for selection.
             index, shape = self.hVertex, self.hShape
             shape.highlightVertex(index, shape.MOVE_VERTEX)
+            for shape in reversed(self.shapes):
+                threshold = 4.5
+                if self.isVisible(shape) and abs(round(shape.points[0].x(),2)-round(point.x(),2))<threshold and abs(round(shape.points[0].y(),2)-round(point.y(),2))<threshold:
+                    self.calculateOffsets(shape, point)
+                    self.setHiding()
+                    if multiple_selection_mode:
+                        if shape not in self.selectedShapes:
+                            self.selectionChanged.emit(
+                                self.selectedShapes + [shape]
+                            )
+                    else:
+                        self.selectionChanged.emit([shape])
+                    return
         else:
             for shape in reversed(self.shapes):
                 if self.isVisible(shape) and shape.containsPoint(point):
