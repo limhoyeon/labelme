@@ -1,2 +1,1 @@
-python -m venv lbme
-python start.py
+.\lbme\Scripts\activate.bat & python start.py
