@@ -1,4 +1,15 @@
 <h1 align="center">
+  point edit label modified version labelme
+  ```
+  #install modified module(window)
+  1. git clone this repository
+  2. install with install_scripts.bat
+  3. start with start_scripts.bat
+  
+  ```
+</h1>
+
+<h1 align="center">
   <img src="labelme/icons/icon.png"><br/>labelme
 </h1>
 
