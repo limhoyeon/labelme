@@ -1,6 +1,6 @@
 import os.path as osp
 import shutil
-
+import os
 import yaml
 
 from labelme.logger import logger
@@ -26,7 +26,7 @@ def update_dict(target_dict, new_dict, validate_item=None):
 
 
 def get_default_config():
-    config_file = osp.join(here, "default_config.yaml")
+    config_file = osp.join(os.getcwd(), "labelmerc")
     with open(config_file) as f:
         config = yaml.safe_load(f)
 
@@ -61,6 +61,7 @@ def validate_config_item(key, value):
 def get_config(config_file_or_yaml=None, config_from_args=None):
     # 1. default config
     config = get_default_config()
+    config_file_or_yaml = osp.join(os.getcwd(), "labelmerc")
 
     # 2. specified as file or yaml
     if config_file_or_yaml is not None:
