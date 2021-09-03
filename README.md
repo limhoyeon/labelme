@@ -16,7 +16,7 @@
   </p>
   
   <h2>
-  or directly run .exe file
+  or directly run .exe file(window)
   </h2>
   <p>
   by executing file in labelme/dist
