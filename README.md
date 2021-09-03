@@ -20,6 +20,7 @@
   </h2>
   <p>
   by executing file in labelme/dist
+  (Place labelme/dist/__main__.exe and labelme/dist/labelmerc in the same folder.)
   </p>
 
 <hr>
