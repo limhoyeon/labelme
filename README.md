@@ -1,3 +1,8 @@
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
 <h1 align="center">
   point edit label modified version labelme
 </h1>
@@ -10,6 +15,19 @@
   3. start with start_scripts.bat
   </p>
   
+  <h2>
+  or directly run .exe file by executing files in labelme/dist
+  </h2>
+  <p>
+  by executing files in labelme/dist
+  </p>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
 <h1 align="center">
   <img src="labelme/icons/icon.png"><br/>labelme
 </h1>
