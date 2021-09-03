@@ -4,7 +4,7 @@
 <hr>
 <hr>
 <h1 align="center">
-  point edit label modified version labelme
+  modified labelme
 </h1>
   <h2>
   install modified module(window)<br>
