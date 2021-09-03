@@ -16,10 +16,10 @@
   </p>
   
   <h2>
-  or directly run .exe file by executing files in labelme/dist
+  or directly run .exe file
   </h2>
   <p>
-  by executing files in labelme/dist
+  by executing file in labelme/dist
   </p>
 
 <hr>
